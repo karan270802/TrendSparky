@@ -4,8 +4,6 @@ if(document.readyState == 'loading'){
 }else{
     ready();
 }
-
-
 //making functions
 function ready(){
     //remove items from cart
@@ -20,7 +18,7 @@ function ready(){
     for(var i = 0; i < quantityInputs.length; i++){
         var input = quantityInputs[i];
         input.addEventListener('change', quantityChanged);
-    } 
+    }
     //add to cart
     var addCart = document.getElementsByClassName('add-cart');
     for(var i = 0; i < addCart.length; i++){
